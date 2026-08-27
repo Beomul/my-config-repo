@@ -1,0 +1,16 @@
+# Spring Cloud Config Server 포트 설정 (관례상 8888)
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+
+
+# spring.cloud. 인식이..?
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Beomul/my-config-repo.git
+          default-label: main
